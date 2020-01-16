@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include <time.h>
+#include <stdlib.h>
 
 #include "UnoCard.h"
 
@@ -10,6 +12,8 @@ UnoCard DrawCard(vector<UnoCard> &cards);
 void PlaceCard(UnoCard card, vector<UnoCard> &cards);
 
 int main() {
+	srand(time(NULL));//initialize random seeding
+
 	cout << "test";
 
 	vector<UnoCard> unoDeck;//uno game deck
